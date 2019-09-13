@@ -1,9 +1,7 @@
 package utility;
 
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.util.Properties;
 
+import java.util.Properties;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -20,21 +18,6 @@ public class BaseClass {
 			getBrowser();
 		}
 		
-	}
-
-	public String getPropertyFromFile(String property) {
-
-		properties = new Properties();
-		try {
-			properties.load(new FileInputStream("src\\main\\java\\Configurations\\config.properties"));
-
-		} catch (IOException e) {
-
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-
-		return properties.getProperty(property);
 	}
 
 	public void getBrowser() {
