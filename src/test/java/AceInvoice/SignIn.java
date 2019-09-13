@@ -116,7 +116,7 @@ public class SignIn extends BaseClass {
 
 	@AfterClass
 	public void afterClass() {
-//		driver.quit();
+		driver.quit();
 	}
 
 }
