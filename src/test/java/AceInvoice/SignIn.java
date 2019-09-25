@@ -14,9 +14,7 @@ import org.testng.annotations.AfterClass;
 
 public class SignIn extends BaseClass {
 	public AceInvoiceSignUpPage signPageObj;
-	String FirstName;
-	String LastName;
-	String EmailID;
+	String FirstName, LastName,  EmailID;
 
 	@BeforeClass
 	public void beforeClass() {
